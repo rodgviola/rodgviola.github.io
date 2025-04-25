@@ -127,6 +127,7 @@ section {
 .home-img img {
     width: 32vw;
     border-radius: 50%;
+    align-items: center;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
 }
@@ -211,7 +212,8 @@ section {
     text-align: left;
 }
 .about-content p {
-    font-size: 1,8rem;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 .about-content .btn {
     margin: 3rem 0;
@@ -427,5 +429,18 @@ section {
     }
     .about img {
         width: 52vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .projects-box {
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
     }
 }
